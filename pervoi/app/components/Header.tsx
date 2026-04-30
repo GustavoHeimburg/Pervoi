@@ -20,6 +20,7 @@ export default function Header() {
                         <a className="hover:text-red-400 transition">Início</a>
                         <a href="#lojas" className="hover:text-red-400 transition">Lojas</a>
                         <a href="#contato" className="hover:text-red-400 transition">Contato</a>
+                        <a href="#cardapio" className="hover:text-red-400 transition">Cardápio</a>
                     </nav>
 
                     <a
