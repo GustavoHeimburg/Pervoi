@@ -12,9 +12,11 @@ export default function Header() {
             <div className="bg-black/60 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 text-white">
 
-                    <h1 className="text-2xl font-extrabold tracking-wide">
-                        <span className="text-red-500">P</span>ervoi
-                    </h1>
+                    <img
+                        src="/pervoi_logo_site.png"
+                        alt="Pervoi Pizzaria"
+                        className="h-10 md:h-12 object-contain"
+                    />
 
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
                         <a className="hover:text-red-400 transition">Início</a>
