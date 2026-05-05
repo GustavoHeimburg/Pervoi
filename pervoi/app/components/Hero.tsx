@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const images = [
-    "/pizza1.jpg",
+    "/pizza5.jpg",
     "/pizza2.jpg",
     "/pizza3.jpg",
     "/pizza4.jpg",
@@ -23,7 +23,6 @@ export default function Hero() {
     return (
         <section className="relative h-[100vh] flex items-center text-white overflow-hidden">
 
-            {/* BACKGROUND ROTATIVO */}
             <div className="absolute inset-0">
                 {images.map((img, i) => (
                     <img
