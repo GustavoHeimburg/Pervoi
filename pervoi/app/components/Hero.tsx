@@ -35,7 +35,6 @@ export default function Hero() {
                 ))}
             </div>
 
-            {/* PIZZAS ANIMADAS */}
             <div className="absolute inset-0 overflow-hidden opacity-5 blur-[2px]">
 
                 <div className="absolute top-10 flex w-[200%] animate-slideSlow gap-16">

@@ -11,13 +11,10 @@ export default function Menu() {
                     Nosso Cardápio 🍕
                 </h2>
 
-                {/* PREMIUM */}
                 <Category title="Pizzas Premium" items={menu.premium} />
 
-                {/* SALGADAS */}
                 <Category title="Pizzas Salgadas" items={menu.salgadas} />
 
-                {/* DOCES */}
                 <Category title="Pizzas Doces" items={menu.doces} />
 
             </div>
