@@ -1,38 +1,99 @@
 export const menu = {
+    tamanhos: [
+        { name: "Broto", description: "6 pedaços, 1 sabor" },
+        { name: "Média", description: "8 pedaços, até 2 sabores" },
+        { name: "Grande", description: "10 pedaços, até 3 sabores" },
+        { name: "Gigante", description: "12 pedaços, até 3 sabores" }
+    ],
+
+    observacoes: [
+        "Todas as pizzas salgadas têm orégano.",
+        "Todas as pizzas doces possuem creme de leite.",
+        "Pizzas doces com opção de chocolate preto ou branco."
+    ],
+
     premium: [
-        {
-            name: "Baita Costela",
-            description: "Mussarela, costela desfiada e catupiry",
-        },
-        {
-            name: "Picanha Soberana",
-            description: "Mussarela e picanha",
-        },
-        {
-            name: "Doritos",
-            description: "Carne moída, cheddar e Doritos",
-        },
+        { name: "Baita Costela", description: "Mussarela, costela desfiada e catupiry" },
+        { name: "Picanha Soberana", description: "Mussarela e picanha" },
+        { name: "Doritos", description: "Queijo prato, carne moída, pimenta, cheddar e Doritos" },
+        { name: "Copa Suprema com Figo", description: "Mussarela, copa e figo" },
+        { name: "Filé Maravilha ao Molho Gorgonzola", description: "Mussarela, filé e queijo gorgonzola" },
+        { name: "Camarão", description: "Mussarela e camarão" },
+        { name: "Filé", description: "Mussarela, filé, catupiry e tomate" },
+        { name: "Filé ao Molho de Conhaque", description: "Mussarela, filé bovino ao molho de conhaque" },
+        { name: "Filé Suíno ao Barbecue", description: "Mussarela, filé suíno defumado, barbecue e cebola caramelizada" },
+        { name: "Filé com Fritas", description: "Mussarela, filé bovino, bacon, batata frita e cheddar" },
+        { name: "Strogonoff de Filé", description: "Mussarela, strogonoff de filé e batata palha" },
+        { name: "Doce Paçoca", description: "Mussarela, creme de paçoca e paçoca" },
+        { name: "Raffaello", description: "Mussarela, creme Raffaello, coco e Raffaello" },
+        { name: "Oreo", description: "Mussarela, creme de Oreo e biscoito Oreo" },
+        { name: "Nutella", description: "Mussarela, Nutella e avelã" },
+        { name: "Leite Ninho", description: "Mussarela e leite ninho" },
+        { name: "Pistache Precioso", description: "Mussarela, creme de pistache e pistache" },
+        { name: "Caramelo Crocante", description: "Mussarela, creme de caramelo e caramelo crocante" }
     ],
 
     salgadas: [
-        {
-            name: "Calabresa",
-            description: "Mussarela e calabresa",
-        },
-        {
-            name: "Frango",
-            description: "Mussarela, frango e catupiry",
-        },
+        { name: "Moda da Casa", description: "Mussarela, bacon, calabresa, milho e cebola" },
+        { name: "Calabresa", description: "Mussarela e calabresa" },
+        { name: "Catubresa", description: "Mussarela, calabresa e catupiry" },
+        { name: "Atum", description: "Mussarela e atum" },
+        { name: "Quatro Queijos", description: "Mussarela, provolone, parmesão e catupiry" },
+        { name: "Super Quatro Queijos", description: "Mussarela, parmesão, provolone, catupiry, bacon e tomate" },
+        { name: "Cinco Queijos", description: "Mussarela, parmesão, provolone, catupiry e cheddar" },
+        { name: "Napolitano", description: "Mussarela e tomate" },
+        { name: "Mussarela", description: "Mussarela" },
+        { name: "Frango", description: "Mussarela, frango e catupiry" },
+        { name: "Super Frango", description: "Mussarela, frango, milho, ervilha e catupiry" },
+        { name: "Lombo", description: "Mussarela, lombo e catupiry" },
+        { name: "Peito de Peru", description: "Mussarela, peito de peru e catupiry" },
+        { name: "Portuguesa", description: "Mussarela, presunto, ovos, cebola e azeitona" },
+        { name: "Mista", description: "Mussarela, presunto, frango, milho, ervilha e palmito" },
+        { name: "Marguerita", description: "Mussarela, manjericão e tomate" },
+        { name: "Paulista", description: "Mussarela, presunto, milho, ervilha e ovos" },
+        { name: "Filé", description: "Mussarela, filé, catupiry e tomate" },
+        { name: "Alho e Óleo", description: "Mussarela, alho e óleo" },
+        { name: "Tomate Seco", description: "Mussarela e tomate seco" },
+        { name: "Tomate Seco com Rúcula", description: "Mussarela, tomate seco e rúcula" },
+        { name: "Palmitela", description: "Mussarela, palmito, bacon e azeitona" },
+        { name: "Colonial", description: "Mussarela, linguiça defumada e catupiry" },
+        { name: "Milho", description: "Mussarela e milho" },
+        { name: "Vegetariana", description: "Mussarela, brócolis, palmito, ervilha e catupiry" },
+        { name: "Strogonoff de Frango", description: "Mussarela, strogonoff de frango e batata palha" },
+        { name: "Strogonoff de Filé", description: "Mussarela, strogonoff de filé e batata palha" },
+        { name: "Pizzaiolo", description: "Mussarela, bacon, milho e catupiry" },
+        { name: "Coração", description: "Mussarela, coração e catupiry" },
+        { name: "Bacon", description: "Mussarela e bacon" },
+        { name: "Italiana", description: "Mussarela, salame italiano, ovos e cebola" },
+        { name: "Explosiva", description: "Mussarela, pepperoni e pimentão" },
+        { name: "Brócolis", description: "Mussarela, brócolis e catupiry" },
+        { name: "Champignon", description: "Mussarela, champignon, azeitona e bacon" },
+        { name: "Siciliana", description: "Mussarela, calabresa, bacon, tomate e cebola" },
+        { name: "Toscana", description: "Mussarela, calabresa moída, ovos e azeitona" },
+        { name: "Mexicana", description: "Mussarela, calabresa moída, bacon, cebola, azeitona e pimenta" },
+        { name: "Supremo", description: "Mussarela, frango, bacon e catupiry" },
+        { name: "Du Chef", description: "Mussarela, brócolis, bacon e catupiry" },
+        { name: "Camarão", description: "Mussarela e camarão (consulte valor adicional)" },
+        { name: "Lombo com Abacaxi", description: "Mussarela, lombo canadense e abacaxi" },
+        { name: "Filé Suíno ao Barbecue", description: "Mussarela, filé suíno, barbecue e cebola caramelizada" },
+        { name: "Filé ao Molho de Conhaque", description: "Mussarela, filé ao molho de conhaque" },
+        { name: "Filé com Fritas", description: "Mussarela, filé, bacon, batata frita e cheddar" }
     ],
 
     doces: [
-        {
-            name: "Nutella",
-            description: "Mussarela, Nutella e avelã",
-        },
-        {
-            name: "Oreo",
-            description: "Mussarela e Oreo",
-        },
-    ],
+        { name: "Chocolate Preto", description: "Mussarela e chocolate preto" },
+        { name: "Chocolate Branco", description: "Mussarela e chocolate branco" },
+        { name: "Banana", description: "Mussarela, banana, leite condensado e canela" },
+        { name: "Banana com Chocolate", description: "Mussarela, banana e chocolate" },
+        { name: "Morango com Chocolate", description: "Mussarela, chocolate e morango" },
+        { name: "Kiwi", description: "Mussarela, chocolate e kiwi" },
+        { name: "Califórnia", description: "Mussarela, figo, abacaxi, pêssego, cereja e leite condensado" },
+        { name: "Prestígio", description: "Mussarela, chocolate e coco" },
+        { name: "Confetes", description: "Mussarela, chocolate e confetes" },
+        { name: "Crocante", description: "Mussarela, chocolate e cereal" },
+        { name: "Brigadeiro", description: "Mussarela, creme de chocolate e granulado" },
+        { name: "Charge", description: "Mussarela, creme de chocolate e amendoim" },
+        { name: "Romeu e Julieta", description: "Mussarela e goiabada" },
+        { name: "Beijinho", description: "Mussarela, doce de coco e coco" }
+    ]
 };
