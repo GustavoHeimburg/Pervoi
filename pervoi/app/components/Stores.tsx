@@ -4,31 +4,31 @@ const stores = [
     {
         name: "PERVOI CONCÓRDIA - SC",
         address: "Centro, Rua Leonel Mosele, 397",
-        image: "/loja1.jpg",
+        image: "/loja1.webp",
         phone: "34445377",
     },
     {
         name: "PERVOI SEARA - SC",
         address: "Rua Herculano H. Zanuzzo, 890",
-        image: "/loja2.jpg",
+        image: "/loja2.webp",
         phone: "34524100",
     },
     {
         name: "PERVOI ERECHIM - RS",
         address: "Rua Léo Neuls, 164",
-        image: "/loja3.jpg",
+        image: "/loja3.webp",
         phone: "35222020",
     },
     {
         name: "PERVOI XANXERÊ - SC",
         address: "Rua Emílio Alett, 366 – Bairro Veneza",
-        image: "/loja4.jpg",
+        image: "/loja4.webp",
         phone: "4920200051",
     },
     {
         name: "PERVOI IRANI - SC",
         address: "Centro, Rua Constante Poggere, 25",
-        image: "/loja5.jpg",
+        image: "/loja5.webp",
         phone: "5549999999999",
     },
 ];

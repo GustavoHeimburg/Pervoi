@@ -12,9 +12,7 @@ export default function Menu() {
                 </h2>
 
                 <Category title="Pizzas Premium" items={menu.premium} />
-
                 <Category title="Pizzas Salgadas" items={menu.salgadas} />
-
                 <Category title="Pizzas Doces" items={menu.doces} />
 
             </div>
@@ -35,12 +33,34 @@ function Category({ title, items }: any) {
                         key={i}
                         className="border rounded-xl p-5 hover:shadow-md transition"
                     >
-                        <h4 className="font-bold text-lg">
-                            {item.name}
-                        </h4>
-                        <p className="text-sm opacity-80 mt-1">
-                            {item.description}
-                        </p>
+
+                        <div className="flex justify-between items-start gap-4">
+
+                            <div>
+                                <h4 className="font-bold text-lg">
+                                    {item.name}
+                                </h4>
+
+                                <p className="text-sm opacity-80 mt-1">
+                                    {item.description}
+                                </p>
+                            </div>
+
+                            <a
+                                href={`https://wa.me/5549999999999?text=Quero%20a%20pizza%20${item.name}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="
+                                text-red-600 font-semibold text-sm
+                                hover:text-red-700
+                                transition
+                              "
+                            >
+                                Pedir →
+                            </a>
+
+                        </div>
+
                     </div>
                 ))}
             </div>
