@@ -35,36 +35,8 @@ export default function Hero() {
                 ))}
             </div>
 
-            <div className="absolute inset-0 overflow-hidden opacity-5 blur-[2px]">
-
-                <div className="absolute top-10 flex w-[200%] animate-slideSlow gap-16">
-                    <img src="/pizza1.png" className="w-40 object-contain" />
-                    <img src="/pizza2.png" className="w-40 object-contain" />
-                    <img src="/pizza3.png" className="w-40 object-contain" />
-                    <img src="/pizza4.png" className="w-40 object-contain" />
-
-                    <img src="/pizza1.png" className="w-40 object-contain" />
-                    <img src="/pizza2.png" className="w-40 object-contain" />
-                    <img src="/pizza3.png" className="w-40 object-contain" />
-                    <img src="/pizza4.png" className="w-40 object-contain" />
-                </div>
-
-                <div className="absolute bottom-10 flex w-[200%] animate-slideSlow-reverse gap-16">
-                    <img src="/pizza2.png" className="w-32 object-contain" />
-                    <img src="/pizza3.png" className="w-32 object-contain" />
-                    <img src="/pizza1.png" className="w-32 object-contain" />
-                    <img src="/pizza4.png" className="w-32 object-contain" />
-
-                    <img src="/pizza2.png" className="w-32 object-contain" />
-                    <img src="/pizza3.png" className="w-32 object-contain" />
-                    <img src="/pizza1.png" className="w-32 object-contain" />
-                    <img src="/pizza4.png" className="w-32 object-contain" />
-                </div>
-
-            </div>
-
             {/* OVERLAY */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none" />
 
             {/* CONTEÚDO */}
             <div className="relative z-10 max-w-6xl mx-auto px-6">
