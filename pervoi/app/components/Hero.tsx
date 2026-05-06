@@ -11,11 +11,17 @@ const images = [
 
 export default function Hero() {
     const [index, setIndex] = useState(0);
+    const [fade, setFade] = useState(true);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setIndex((prev) => (prev + 1) % images.length);
-        }, 3000);
+            setFade(false);
+
+            setTimeout(() => {
+                setIndex((prev) => (prev + 1) % images.length);
+                setFade(true);
+            }, 300);
+        }, 4000);
 
         return () => clearInterval(interval);
     }, []);
@@ -23,22 +29,15 @@ export default function Hero() {
     return (
         <section className="relative h-[100vh] flex items-center text-white overflow-hidden">
 
-            <div className="absolute inset-0">
-                {images.map((img, i) => (
-                    <img
-                        key={i}
-                        src={img}
-                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[2000ms] ${
-                            i === index ? "opacity-100 scale-105" : "opacity-0 scale-100"
-                        }`}
-                    />
-                ))}
-            </div>
+            <img
+                src={images[index]}
+                className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
+                    fade ? "opacity-100 scale-105" : "opacity-0 scale-100"
+                }`}
+            />
 
-            {/* OVERLAY */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent pointer-events-none" />
 
-            {/* CONTEÚDO */}
             <div className="relative z-10 max-w-6xl mx-auto px-6">
                 <div className="max-w-xl">
 
