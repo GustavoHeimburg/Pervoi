@@ -1,6 +1,6 @@
-import Header from "components/Header";
-import Footer from "components/Footer";
-import Menu from "components/Menu";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+import Menu from "@/app/components/Menu";
 
 export default function CardapioPage() {
     return (
