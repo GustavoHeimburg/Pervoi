@@ -37,7 +37,7 @@ export default function Header() {
                     </nav>
 
                     <a
-                        href="https://wa.me/5549999999999?text=Olá,%20quero%20fazer%20um%20pedido"
+                        href="https://wa.me/554920200051?text=Olá,%20quero%20fazer%20um%20pedido"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="
@@ -88,7 +88,7 @@ export default function Header() {
                     </a>
 
                     <a
-                        href="https://wa.me/4920200051"
+                        href="https://wa.me/554920200051"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-red-600 px-6 py-3 rounded-full font-semibold"

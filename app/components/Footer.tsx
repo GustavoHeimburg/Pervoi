@@ -35,7 +35,7 @@ export default function Footer() {
                     </ul>
 
                     <a
-                        href="https://wa.me/4920200051"
+                        href="https://wa.me/554920200051"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-4 bg-green-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition"
