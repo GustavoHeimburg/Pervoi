@@ -18,9 +18,23 @@ export default function Footer() {
                         Navegação
                     </h3>
                     <ul className="space-y-2 text-sm opacity-80">
-                        <li><a href="#" className="hover:text-red-400">Início</a></li>
-                        <li><a href="/pervoi/public#lojas" className="hover:text-red-400">Lojas</a></li>
-                        <li><a href="/pervoi/public#contato" className="hover:text-red-400">Contato</a></li>
+                        <li>
+                            <a href="/" className="hover:text-red-400 transition">
+                                Início
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/#lojas" className="hover:text-red-400 transition">
+                                Lojas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/#contato" className="hover:text-red-400 transition">
+                                Contato
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
