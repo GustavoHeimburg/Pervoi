@@ -1,104 +1,149 @@
 export default function Reviews() {
     return (
-        <section className="py-24 bg-gray-50">
-            <div className="max-w-6xl mx-auto px-6 text-center">
+        <section className="relative py-32 bg-black text-white overflow-hidden">
 
-                <h2 className="text-4xl font-heading font-bold text-gray-900">
-                    Quem prova, aprova 🍕
-                </h2>
+            {/* BG */}
+            <div className="absolute inset-0">
 
-                <p className="mt-4 text-gray-600">
-                    Veja o que nossos clientes estão dizendo
-                </p>
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#ff000020,transparent_30%)]" />
 
-                <div className="mt-14 grid md:grid-cols-3 gap-8">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,#7f0000,transparent_35%)]" />
 
-                    {/* Review */}
-                    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 text-left">
+            </div>
 
-                        <div className="flex items-center gap-1 text-yellow-500 text-lg">
-                            ★★★★★
-                        </div>
+            <div className="relative max-w-7xl mx-auto px-6">
 
-                        <p className="mt-4 text-gray-700 leading-relaxed">
-                            Pizza incrível, muito bem recheada e chegou super rápido.
-                            Com certeza vou pedir novamente!
-                        </p>
+                {/* HEADER */}
+                <div className="text-center max-w-3xl mx-auto">
 
-                        <div className="mt-6 flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-500">
-                                M
-                            </div>
-                            <div>
-                                <p className="text-sm font-semibold text-gray-900">
-                                    Marcos Silva
-                                </p>
-                                <p className="text-xs text-gray-500">
-                                    Cliente de Concórdia
-                                </p>
-                            </div>
-                        </div>
-
+                    <div className="
+            inline-flex items-center gap-2
+            px-5 py-2
+            rounded-full
+            border border-white/10
+            bg-white/5
+            backdrop-blur-xl
+            text-sm text-gray-300
+          ">
+                        ⭐ Avaliações reais
                     </div>
 
-                    {/* Review 2 */}
-                    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 text-left">
+                    <h2 className="
+            mt-8
+            text-5xl md:text-6xl
+            font-black
+            leading-tight
+          ">
+                        Quem prova,
+                        <span className="block text-red-500">
+              não esquece.
+            </span>
+                    </h2>
 
-                        <div className="flex items-center gap-1 text-yellow-500 text-lg">
-                            ★★★★★
-                        </div>
-
-                        <p className="mt-4 text-gray-700 leading-relaxed">
-                            Atendimento excelente e a pizza veio quentinha.
-                            Uma das melhores da região!
-                        </p>
-
-                        <div className="mt-6 flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-500">
-                                A
-                            </div>
-                            <div>
-                                <p className="text-sm font-semibold text-gray-900">
-                                    Amanda Souza
-                                </p>
-                                <p className="text-xs text-gray-500">
-                                    Cliente de Seara
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    {/* Review 3 */}
-                    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 text-left">
-
-                        <div className="flex items-center gap-1 text-yellow-500 text-lg">
-                            ★★★★★
-                        </div>
-
-                        <p className="mt-4 text-gray-700 leading-relaxed">
-                            Simplesmente perfeita! Massa leve, ingredientes de qualidade
-                            e muito sabor. Recomendo demais!
-                        </p>
-
-                        <div className="mt-6 flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-500">
-                                J
-                            </div>
-                            <div>
-                                <p className="text-sm font-semibold text-gray-900">
-                                    João Pereira
-                                </p>
-                                <p className="text-xs text-gray-500">
-                                    Cliente de Erechim
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
+                    <p className="mt-6 text-lg text-gray-400">
+                        Clientes apaixonados pelo sabor da Pervoi 🍕
+                    </p>
 
                 </div>
+
+                {/* CARDS */}
+                <div className="mt-20 grid md:grid-cols-3 gap-8">
+
+                    {reviews.map((review, index) => (
+                        <div
+                            key={index}
+                            className="
+                relative
+                rounded-3xl
+                border border-white/10
+                bg-white/5
+                backdrop-blur-xl
+                p-8
+                overflow-hidden
+                hover:-translate-y-2
+                transition-all duration-500
+              "
+                        >
+
+                            {/* GLOW */}
+                            <div className="
+                absolute inset-0
+                bg-gradient-to-br
+                from-red-500/10
+                to-transparent
+                opacity-0 hover:opacity-100
+                transition-all duration-500
+              " />
+
+                            <div className="relative z-10">
+
+                                <div className="text-yellow-400 text-xl">
+                                    ★★★★★
+                                </div>
+
+                                <p className="
+                  mt-6
+                  text-gray-300
+                  leading-relaxed
+                  text-lg
+                ">
+                                    {review.text}
+                                </p>
+
+                                <div className="mt-8 flex items-center gap-4">
+
+                                    <div className="
+                    w-14 h-14
+                    rounded-2xl
+                    bg-red-600
+                    flex items-center justify-center
+                    font-black
+                    text-lg
+                  ">
+                                        {review.initial}
+                                    </div>
+
+                                    <div>
+                                        <h3 className="font-bold text-lg">
+                                            {review.name}
+                                        </h3>
+
+                                        <p className="text-sm text-gray-400">
+                                            {review.city}
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    ))}
+
+                </div>
+
             </div>
         </section>
     );
 }
+
+const reviews = [
+    {
+        name: "Marcos Silva",
+        city: "Cliente de Concórdia",
+        initial: "M",
+        text: "Pizza incrível, muito recheada e chegou super rápido. Uma das melhores que já comi.",
+    },
+    {
+        name: "Amanda Souza",
+        city: "Cliente de Seara",
+        initial: "A",
+        text: "Atendimento excelente e sabor absurdo. Dá pra sentir a qualidade dos ingredientes.",
+    },
+    {
+        name: "João Pereira",
+        city: "Cliente de Erechim",
+        initial: "J",
+        text: "Simplesmente perfeita. Massa leve, muito sabor e uma experiência diferenciada.",
+    },
+];

@@ -1,84 +1,178 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-const images = [
-    "/pizza5.webp",
-    "/pizza2.webp",
-    "/pizza3.webp",
-    "/pizza4.webp",
-];
-
 export default function Hero() {
-    const [index, setIndex] = useState(0);
-    const [fade, setFade] = useState(true);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setFade(false);
-
-            setTimeout(() => {
-                setIndex((prev) => (prev + 1) % images.length);
-                setFade(true);
-            }, 300);
-        }, 4000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     return (
-        <section className="relative h-[100vh] flex items-center text-white overflow-hidden">
+        <section className="relative min-h-screen overflow-hidden bg-black text-white">
 
-            <img
-                src={images[index]}
-                className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
-                    fade ? "opacity-100 scale-105" : "opacity-0 scale-100"
-                }`}
-            />
+            {/* BACKGROUND */}
+            <div className="absolute inset-0">
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#7f0000,transparent_35%)] opacity-70" />
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6">
-                <div className="max-w-xl">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#ff000020,transparent_30%)]" />
 
-          <span className="text-red-500 uppercase tracking-widest text-sm font-semibold">
-            Pizzaria Artesanal
-          </span>
+                <div className="absolute inset-0 bg-black/70" />
 
-                    <h1 className="mt-4 font-heading text-5xl md:text-6xl font-extrabold leading-tight">
-                        Sabor de verdade
-                        <br />
-                        <span className="text-red-500">
-              em cada fatia 🍕
-            </span>
-                    </h1>
+            </div>
 
-                    <p className="mt-6 text-lg text-gray-300">
-                        Ingredientes selecionados, massa artesanal e aquele sabor
-                        que faz você querer mais.
-                    </p>
+            {/* HERO */}
+            <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-20">
 
-                    <div className="mt-8 flex gap-4 flex-wrap">
+                <div className="grid lg:grid-cols-2 items-center gap-20">
 
-                        <a
-                            href="https://wa.me/554920200051"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105"
-                        >
-                            Pedir Agora
-                        </a>
+                    {/* LEFT */}
+                    <div>
 
-                        <a
-                            href="/cardapio"
-                            className="text-white border-b border-white/50 pb-1 hover:border-white"
-                        >
-                            Ver Cardápio →
-                        </a>
+                        <div className="
+              inline-flex items-center gap-2
+              border border-white/10
+              bg-white/5
+              backdrop-blur-xl
+              rounded-full
+              px-5 py-2
+              text-sm text-gray-300
+            ">
+                            🍕 Pizzaria Artesanal Premium
+                        </div>
+
+                        <h1 className="
+              mt-8
+              text-5xl
+              md:text-7xl
+              font-black
+              leading-[0.95]
+              tracking-tight
+            ">
+                            A pizza que faz
+                            <span className="block text-red-500">
+                Xanxerê parar.
+              </span>
+                        </h1>
+
+                        <p className="
+              mt-8
+              text-lg
+              text-gray-300
+              max-w-xl
+              leading-relaxed
+            ">
+                            Ingredientes selecionados, massa artesanal
+                            e uma experiência absurda de sabor em cada fatia.
+                        </p>
+
+                        {/* BOTÕES */}
+                        <div className="mt-10 flex flex-wrap gap-4">
+
+                            <a
+                                href="https://wa.me/554920200051"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="
+                  bg-red-600
+                  hover:bg-red-700
+                  px-8 py-4
+                  rounded-2xl
+                  font-bold
+                  text-lg
+                  transition-all duration-300
+                  hover:scale-105
+                  shadow-[0_0_40px_rgba(255,0,0,0.35)]
+                "
+                            >
+                                Pedir Agora
+                            </a>
+
+                            <a
+                                href="/cardapio"
+                                className="
+                  border border-white/15
+                  bg-white/5
+                  backdrop-blur-xl
+                  hover:bg-white/10
+                  px-8 py-4
+                  rounded-2xl
+                  font-semibold
+                  text-white
+                  transition-all duration-300
+                "
+                            >
+                                Ver Cardápio →
+                            </a>
+
+                        </div>
+
+                        {/* STATS */}
+                        <div className="mt-14 flex gap-10">
+
+                            <div>
+                                <h3 className="text-4xl font-black">
+                                    +12mil
+                                </h3>
+
+                                <p className="text-gray-400">
+                                    pedidos entregues
+                                </p>
+                            </div>
+
+                            <div className="w-px bg-white/10" />
+
+                            <div>
+                                <h3 className="text-4xl font-black">
+                                    4.9★
+                                </h3>
+
+                                <p className="text-gray-400">
+                                    avaliações reais
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {/* RIGHT */}
+                    <div className="relative flex justify-center">
+
+                        {/* GLOW */}
+                        <div className="
+              absolute
+              w-[450px]
+              h-[450px]
+              bg-red-600/20
+              blur-3xl
+              rounded-full
+            " />
+
+                        {/* CARD */}
+                        <div className="
+              relative
+              rounded-[2rem]
+              overflow-hidden
+              border border-white/10
+              bg-white/5
+              backdrop-blur-xl
+              shadow-2xl
+              rotate-2
+              hover:rotate-0
+              transition-all duration-500
+            ">
+
+                            <img
+                                src="/pizza5.webp"
+                                alt="Pizza"
+                                className="
+                  w-full
+                  max-w-[520px]
+                  object-cover
+                "
+                            />
+
+                        </div>
 
                     </div>
 
                 </div>
+
             </div>
 
         </section>
