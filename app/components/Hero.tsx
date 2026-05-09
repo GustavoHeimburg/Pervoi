@@ -43,9 +43,9 @@ export default function Hero() {
               leading-[0.95]
               tracking-tight
             ">
-                            A pizza que faz
+                            A pizza que conquista
                             <span className="block text-red-500">
-                Xanxerê parar.
+                toda a região.
               </span>
                         </h1>
 
