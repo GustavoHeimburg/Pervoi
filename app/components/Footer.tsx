@@ -31,7 +31,7 @@ export default function Footer() {
 
                     <ul className="space-y-2 text-sm opacity-80">
                         <li>📞 (49) 2020-0051</li>
-                        <li>🕒 Todos os dias, 18h às 23h</li>
+                        <li>🕒 Terça-Feira á Domingo, 18h às 23h</li>
                     </ul>
 
                     <a
