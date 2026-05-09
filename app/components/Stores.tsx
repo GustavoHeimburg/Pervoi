@@ -29,7 +29,7 @@ const stores = [
         name: "PERVOI IRANI - SC",
         address: "Centro, Rua Constante Poggere, 25",
         image: "/loja5.webp",
-        phone: "5549999999999",
+        phone: "554930308500",
     },
 ];
 

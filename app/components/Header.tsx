@@ -19,10 +19,21 @@ export default function Header() {
                     />
 
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-                        <a href="/pervoi/public" className="hover:text-red-400 transition">Início</a>
-                        <a href="/pervoi/public#lojas" className="hover:text-red-400 transition">Lojas</a>
-                        <a href="/pervoi/public#contato" className="hover:text-red-400 transition">Contato</a>
-                        <a href="/cardapio" className="hover:text-red-400 transition">Cardápio</a>
+                        <a href="/" className="hover:text-red-400 transition">
+                            Início
+                        </a>
+
+                        <a href="/#lojas" className="hover:text-red-400 transition">
+                            Lojas
+                        </a>
+
+                        <a href="/#contato" className="hover:text-red-400 transition">
+                            Contato
+                        </a>
+
+                        <a href="/cardapio" className="hover:text-red-400 transition">
+                            Cardápio
+                        </a>
                     </nav>
 
                     <a
@@ -52,19 +63,34 @@ export default function Header() {
 
             <div
                 className={`
-          md:hidden bg-black/95 backdrop-blur-md text-white
+          md:hidden bg-black/60 backdrop-blur-md text-white
+          border-b border-white/10
           transition-all duration-300 overflow-hidden
-          ${open ? "max-h-60 py-6" : "max-h-0"}
+          ${open ? "max-h-80 py-6" : "max-h-0"}
         `}
             >
                 <div className="flex flex-col items-center gap-6 text-lg">
 
-                    <a onClick={() => setOpen(false)}>Início</a>
-                    <a href="#lojas" onClick={() => setOpen(false)}>Lojas</a>
-                    <a href="#contato" onClick={() => setOpen(false)}>Contato</a>
+                    <a href="/" onClick={() => setOpen(false)}>
+                        Início
+                    </a>
+
+                    <a href="/#lojas" onClick={() => setOpen(false)}>
+                        Lojas
+                    </a>
+
+                    <a href="/#contato" onClick={() => setOpen(false)}>
+                        Contato
+                    </a>
+
+                    <a href="/cardapio" onClick={() => setOpen(false)}>
+                        Cardápio
+                    </a>
 
                     <a
-                        href="https://wa.me/5549999999999"
+                        href="https://wa.me/4920200051"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-red-600 px-6 py-3 rounded-full font-semibold"
                     >
                         Pedir Agora
@@ -72,6 +98,7 @@ export default function Header() {
 
                 </div>
             </div>
+
         </header>
     );
 }

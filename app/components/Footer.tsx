@@ -30,12 +30,12 @@ export default function Footer() {
                     </h3>
 
                     <ul className="space-y-2 text-sm opacity-80">
-                        <li>📞 (49) 99999-9999</li>
+                        <li>📞 (49) 2020-0051</li>
                         <li>🕒 Todos os dias, 18h às 23h</li>
                     </ul>
 
                     <a
-                        href="https://wa.me/5549999999999"
+                        href="https://wa.me/4920200051"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block mt-4 bg-green-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition"
