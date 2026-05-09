@@ -10,7 +10,7 @@ export default function Header() {
         <header className="fixed w-full top-0 left-0 z-50">
 
             <div className="bg-black/60 backdrop-blur-md border-b border-white/10">
-                <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 text-white">
+                <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 items-center px-6 py-4 text-white">
 
                     <img
                         src="/pervoi_logo_site.png"
@@ -18,7 +18,7 @@ export default function Header() {
                         className="h-10 md:h-12 object-contain"
                     />
 
-                    <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <nav className="hidden md:flex items-center justify-center gap-8 text-sm font-medium">
                         <a href="/" className="hover:text-red-400 transition">
                             Início
                         </a>
@@ -36,25 +36,9 @@ export default function Header() {
                         </a>
                     </nav>
 
-                    <a
-                        href="https://wa.me/554920200051?text=Olá,%20quero%20fazer%20um%20pedido"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="
-              hidden md:inline-block
-              bg-red-600 px-6 py-2 rounded-full
-              font-semibold text-sm
-              shadow-md
-              transition-all duration-300
-              hover:bg-red-700 hover:scale-105 active:scale-95
-            "
-                    >
-                        Pedir Agora
-                    </a>
-
                     <button
                         onClick={() => setOpen(!open)}
-                        className="md:hidden p-2 rounded-lg hover:bg-white/10 transition"
+                        className="md:hidden justify-self-end p-2 rounded-lg hover:bg-white/10 transition"
                     >
                         {open ? <X size={26} /> : <Menu size={26} />}
                     </button>
@@ -85,15 +69,6 @@ export default function Header() {
 
                     <a href="/cardapio" onClick={() => setOpen(false)}>
                         Cardápio
-                    </a>
-
-                    <a
-                        href="https://wa.me/554920200051"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-red-600 px-6 py-3 rounded-full font-semibold"
-                    >
-                        Pedir Agora
                     </a>
 
                 </div>

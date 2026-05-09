@@ -47,7 +47,7 @@ function Category({ title, items }: any) {
                             </div>
 
                             <a
-                                href={`https://wa.me/5549999999999?text=Quero%20a%20pizza%20${item.name}`}
+                                href={`https://wa.me/554920200051?text=Quero%20a%20pizza%20${item.name}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="

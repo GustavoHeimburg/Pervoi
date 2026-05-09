@@ -61,7 +61,7 @@ export default function Hero() {
                     <div className="mt-8 flex gap-4 flex-wrap">
 
                         <a
-                            href="https://wa.me/5549999999999"
+                            href="https://wa.me/554920200051"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105"
